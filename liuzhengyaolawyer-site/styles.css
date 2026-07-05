@@ -230,6 +230,10 @@ h3 {
   margin: 0;
 }
 
+.intro-grid p:last-child {
+  grid-column: 1 / -1;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
