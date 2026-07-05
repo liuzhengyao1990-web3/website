@@ -1,0 +1,203 @@
+.en-home .site-header {
+  align-items: center;
+}
+
+.en-home .header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.lang-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(23, 32, 39, 0.14);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lang-pill a {
+  color: var(--muted);
+}
+
+.lang-pill a.active {
+  color: var(--accent-dark);
+}
+
+.en-hero {
+  position: relative;
+  min-height: 76vh;
+  display: grid;
+  align-items: center;
+  padding: clamp(72px, 10vw, 124px) clamp(20px, 5vw, 72px);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(23, 32, 39, 0.08);
+}
+
+.en-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(58vw, 760px);
+  background: url('/assets/liu-portrait.jpg') center 22% / cover no-repeat;
+}
+
+.en-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(247,245,240,.98) 0%, rgba(247,245,240,.9) 44%, rgba(247,245,240,.18) 70%, rgba(247,245,240,.04) 100%),
+    linear-gradient(180deg, rgba(247,245,240,0) 0%, rgba(247,245,240,.68) 100%);
+}
+
+.en-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.en-hero h1 {
+  max-width: 760px;
+  font-size: clamp(42px, 7vw, 78px);
+}
+
+.en-hero .lead {
+  max-width: 690px;
+}
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+  max-width: 920px;
+}
+
+.trust-item {
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(23, 32, 39, 0.1);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.trust-item strong,
+.trust-item span {
+  display: block;
+}
+
+.trust-item strong {
+  font-size: 18px;
+}
+
+.trust-item span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.en-section-copy {
+  max-width: 1080px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.en-section-copy p {
+  margin: 0 0 16px;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.practice-card {
+  min-height: 250px;
+  padding: 22px 24px;
+  background: var(--white);
+  border: 1px solid rgba(23, 32, 39, 0.1);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.practice-card span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.practice-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.process-step {
+  padding: 20px;
+  background: var(--white);
+  border-top: 4px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.process-step p {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .en-home .site-header,
+  .en-home .header-actions {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .en-home .site-header {
+    flex-direction: column;
+  }
+
+  .trust-strip,
+  .practice-grid,
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-strip,
+  .practice-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .en-hero {
+    min-height: 680px;
+    align-items: start;
+    padding-top: 52px;
+  }
+
+  .en-hero::before {
+    width: 100%;
+  }
+
+  .en-hero h1 {
+    font-size: 42px;
+  }
+}
