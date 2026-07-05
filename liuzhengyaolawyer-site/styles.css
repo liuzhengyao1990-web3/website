@@ -120,9 +120,7 @@ a {
 .hero-shade {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(247, 245, 240, 0.98) 0%, rgba(247, 245, 240, 0.9) 42%, rgba(247, 245, 240, 0.16) 66%, rgba(247, 245, 240, 0.04) 100%),
-    linear-gradient(180deg, rgba(247, 245, 240, 0) 0%, rgba(247, 245, 240, 0) 52%, rgba(247, 245, 240, 0.72) 100%);
+  background: linear-gradient(90deg, rgba(247, 245, 240, 0.98) 0%, rgba(247, 245, 240, 0.9) 42%, rgba(247, 245, 240, 0.12) 58%, rgba(247, 245, 240, 0) 72%);
 }
 
 .hero-content {
@@ -495,8 +493,8 @@ dd {
 
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(247, 245, 240, 0.96) 0%, rgba(247, 245, 240, 0.82) 48%, rgba(247, 245, 240, 0.18) 78%, rgba(247, 245, 240, 0.04) 100%),
-      linear-gradient(180deg, rgba(247, 245, 240, 0.98) 0%, rgba(247, 245, 240, 0.88) 28%, rgba(247, 245, 240, 0.22) 46%, rgba(247, 245, 240, 0.06) 100%);
+      linear-gradient(90deg, rgba(247, 245, 240, 0.98) 0%, rgba(247, 245, 240, 0.86) 50%, rgba(247, 245, 240, 0.12) 76%, rgba(247, 245, 240, 0) 100%),
+      linear-gradient(180deg, rgba(247, 245, 240, 0.96) 0%, rgba(247, 245, 240, 0.76) 30%, rgba(247, 245, 240, 0) 56%);
   }
 
   h1 {
