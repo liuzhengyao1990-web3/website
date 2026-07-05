@@ -107,10 +107,10 @@ a {
 .hero-photo {
   position: absolute;
   inset: 0 0 0 auto;
-  width: min(58vw, 760px);
+  width: min(46vw, 608px);
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 24%;
 }
 
 .hero-photo-base {
@@ -141,27 +141,6 @@ a {
   max-width: 720px;
 }
 
-.hero-image-line {
-  position: absolute;
-  top: clamp(96px, 16vh, 150px);
-  right: clamp(28px, 6vw, 88px);
-  z-index: 2;
-  width: max-content;
-  max-width: calc(100vw - 120px);
-  margin: 0;
-  padding: 10px 14px;
-  color: #21313a;
-  background: rgba(247, 245, 240, 0.74);
-  border: 1px solid rgba(23, 32, 39, 0.1);
-  border-radius: 8px;
-  box-shadow: 0 10px 24px rgba(20, 30, 36, 0.1);
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.45;
-  white-space: nowrap;
-  backdrop-filter: blur(8px);
-}
-
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent-dark);
@@ -179,7 +158,7 @@ p {
 
 h1 {
   margin: 0 0 22px;
-  font-size: clamp(48px, 8vw, 86px);
+  font-size: clamp(40px, 6.4vw, 70px);
   line-height: 1.04;
   letter-spacing: 0;
 }
@@ -198,10 +177,20 @@ h3 {
 }
 
 .lead {
-  max-width: 660px;
+  display: grid;
+  gap: 8px;
+  max-width: 720px;
   margin: 0 0 30px;
   color: #34414b;
   font-size: clamp(18px, 2vw, 22px);
+}
+
+.lead span {
+  white-space: nowrap;
+}
+
+.lead span + span {
+  font-size: clamp(13px, 1.45vw, 17px);
 }
 
 .hero-actions {
@@ -487,13 +476,6 @@ dd {
     gap: 8px;
   }
 
-  .hero-image-line {
-    top: auto;
-    right: 20px;
-    bottom: 40px;
-    max-width: calc(100vw - 40px);
-    font-size: 15px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -517,8 +499,8 @@ dd {
   }
 
   .hero-photo {
-    width: 100%;
-    object-position: center 30%;
+    width: 80%;
+    object-position: center 26%;
   }
 
   .hero-photo-blur {
@@ -533,24 +515,15 @@ dd {
   }
 
   h1 {
-    font-size: 46px;
+    font-size: 38px;
   }
 
   .lead {
     font-size: 18px;
   }
 
-  .intro .section-heading h2,
-  .hero-image-line {
+  .intro .section-heading h2 {
     white-space: normal;
-  }
-
-  .hero-image-line {
-    left: 16px;
-    right: 16px;
-    max-width: none;
-    font-size: 13px;
-    white-space: nowrap;
   }
 
   .service-grid {
